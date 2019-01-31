@@ -1,0 +1,21 @@
+<h2>List of Projects</h2>
+<!-- <table id="table"> -->
+    
+        <div *ngFor="let project of projects | async" class="panel panel-default detail">
+            <div class="panel-body">
+                <div class="linkColor">
+                    <img src="{{project.image}}"><br>
+                    <h3 (click)="goToDetailPage(project)"><em>{{project.projectName}}</em> <br>
+                        {{project.projectManager}}</h3>
+                </div>
+                <div *ngIf="currentRoute === '/admin'" class="editor">
+                    {{project.projectName}}
+                    <hr>
+                   
+                    <app-edit [selectedProject]="project"></app-edit>
+                </div>
+            </div>
+
+        </div>
+   
+<!-- </table> -->

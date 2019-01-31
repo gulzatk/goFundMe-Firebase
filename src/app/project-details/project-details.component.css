@@ -1,0 +1,11 @@
+img {
+    width: 60%;
+}
+
+.detail{
+    border: solid 1px;
+   text-align: center;
+   
+    margin: 30px;
+    margin-right: 10px;
+}

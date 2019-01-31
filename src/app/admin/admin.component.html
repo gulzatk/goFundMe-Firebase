@@ -1,0 +1,44 @@
+
+<div class="panel panel-default container">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Project</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Project Title:</label>
+        <br>
+        <input #newProjectName>
+      </div>
+
+      <div>
+        <label>Project Manager:</label>
+        <br>
+        <input #newProjectManager>
+      </div>
+
+      <div>
+        <label>Project Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <div>
+        <label>Money to Raise</label>
+        <br>
+        <input #newMoneyToRaise>
+      </div>
+      <div>
+        <label>Image</label>
+        <br>
+        <input  #newImage>
+      </div>
+      <button (click)="submitForm(newProjectName.value, newProjectManager.value, newDescription.value, newMoneyToRaise.value, newImage.value); newProjectName.value=''; newProjectManager.value=''; newDescription.value=''; newMoneyToRaise.value='';  newImage.value='' ">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-home></app-home>
+  
+</div>
+
